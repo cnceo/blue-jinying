@@ -1,0 +1,20 @@
+.main .links .child{box-sizing:border-box;float:left;border-right:1px solid #e3e3e3;height:58px;line-height:58px;text-align:center;font-size:13px;color:#242424;}
+.main .links .child.no{border-right:0px;}
+.main .links .child a{color:#006BFF;padding:0 4px;}
+.main .links .child1{width:114px;}
+.main .links .child2{width:238px;}
+.main .links .child3{width:238px;}
+.main .links .child4{width:151px;}
+.main .links .child5{width:151px;}
+.main .links .child6{width:inherit;float:inherit !important;}
+
+
+.main .links .links-title{line-height:60px;padding-left:30px;color:#000;font-size:16px;border-bottom:1px solid #e7e7e7;background:#f7f7f7;}
+.main .links .links-titles{border-bottom:1px solid #e7e7e7;background:#f7f7f7;}
+.main .links .links-titles:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+
+.main .links .links-content{background:#fff;}
+.main .links .links-content:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .links .links-content .child{border-right:0px;}
+.main .links .links-content p{text-align:center;padding:12px 0;font-size:13px;color:#242424;}
+.main .links .links-content .links-line{border-bottom:1px solid #e7e7e7;}

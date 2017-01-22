@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/user_alert.css" />
+</head>
+
+<body>
+
+<div class="alert-msg-bg"></div>
+<div class="alert-msg alert-msg1" >
+    <div class="msg-head">
+        <p>投注详情</p><img class="close" src="images/user/close.png" onClick='(function msg_show(){$(".alert-msg").stop(false,true).delay(200).fadeOut(500);$(".alert-msg-bg").stop(false,true).fadeOut(500);})()' />
+    </div>
+    <div class="msg-content">
+
+        <div class="line line-textarea">
+            <div class="line-content ">
+                <div class="line-text"><textarea style="width:100%;height:120px;" class="textArea">-,-,-,-,5|6|7|8|9</textarea></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- alert-msg -->
+<div class="alert-msgss alert-msgss1">
+    <div class="msg-head">
+        <p>重庆时时彩 投注明细</p>
+    </div>
+    <div class="msg-content">
+        <ul>
+            <li class="msg-li">
+                <span>方案期号：</span>
+                <span>20160331-041</span>
+            </li>
+            <li class="msg-li">
+                <span>开奖号码：</span>
+                <div class="mun">1</div>
+                <div class="mun">1</div>
+                <div class="mun">1</div>
+                <div class="mun">1</div>
+                <div class="mun">1</div>
+                <div class="mun">12</div>
+
+
+            </li>
+            <li class="msg-li">
+                <span>方案编号：</span>
+                <span>146786557899654343</span>
+            </li>
+            <li class="msg-li">
+                <span>投注时间：</span>
+                <span>2016/03/31 12:44:10</span>
+            </li>
+            <li class="msg-li">
+                <span>投注总金额：</span>
+                <span>8.000</span>
+            </li>
+            <li class="msg-li">
+                <span>总奖金：</span>
+                <span>15.280</span>
+            </li>
+        </ul>
+       
+    </div>
+    <div class="siftings-titles">
+        <div class="child child1">玩法</div>
+        <div class="child child2">投注内容</div>
+        <div class="child child3">注数</div>
+        <div class="child child4">倍数</div>
+        <div class="child child5">投注金额</div>
+        <div class="child child6">模式</div>
+        <div class="child child7 no">状态/奖金</div>
+    </div>
+    <div class="siftings-content">
+        <div class="siftings-line">
+            <div class="child child1">五星定位胆</div>
+            <div class="child child2">-,-,-,-,5|6|7|8|<span class="blue">9</span><a href='javascript:(function msg_show(){$(".alert-msg").stop(false,true).delay(200).fadeIn(500);$(".alert-msg-bg").stop(false,true).fadeIn(500);})()'>详细</a></div>
+            <div class="child child3">5</div>
+            <div class="child child4">8</div>
+            <div class="child child5"><span class="blue">￥8.000</span>元</div>
+            <div class="child child6">角</div>
+            <div class="child child7 no">15.280</div>
+        </div>
+    </div>
+
+    <div class="btn"><input type="button" class="inputBtn" value="撤单" /></div>
+</div>
+<!-- alert-msg over -->
+<script src="assets/jquery/jquery.js"></script>
+<script src="js/user_alert.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/lottery_home.css" />
+</head>
+
+<body>
+
+<!-- header -->
+<div class="header">
+    <!-- head -->
+    <div class="head">
+    <div class="container">
+        <p class="gmt"><img src="images/GMT.png" /><span></span></p>
+        <ul class="nav">
+            <a href="rechargewithdraw_fund.html"><li><p>充值</p></li></a>
+            <a href="rechargewithdraw_withdraw.html"><li><p>提现</p></li></a>
+            <li><a href="user_note_inbox_list.html  "><div class="mun">0</div></a>
+                <div class="list mun-list" >
+                <div class="m-title">我的未读消息(0) <a href="user_note_inbox_list">更多 >></a></div>
+                <div class="center">
+                    <p class="m-msg">暂未收到新消息</p>
+                    <a href="user_note_detail.html"><div class="list-child"><p>信息1</p></div></a>
+                    <a href="user_note_detail.html"><div class="list-child"><p>信息2</p></div></a>
+                </div></div>
+            </li>
+            <li><p>余额：10000.00 <img src="images/refreshBall.png"></p></li>
+
+            <li><p>我的账户<img src="images/nav-pointer.png" /></p>
+                <div class="list"><div class="center">
+                    <a href="user_info_save.html"><div class="list-child">账户预览</div></a>
+                    <a href="user_center.html"><div class="list-child">会员中心</div></a>
+                    <a href="user_order.html"><div class="list-child">投注历史</div></a>
+                    <a href="money_detailed_report.html"><div class="list-child">账户明细</div></a>
+                    <a href="user_team_list_users.html"><div class="list-child">代理中心</div></a>
+                    <a href="user_my_contract.html"><div class="list-child">我的契约</div></a>
+                    <a href="user_my_dailyPay.html"><div class="list-child">我的日工资</div></a>
+                    <a href="login.html"><div class="list-child">退出登录</div></a>
+                </div></div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <!-- head over -->
+    <!-- foot -->
+    <div class="foot">
+    <div class="container">
+        <a href="index.html"><div class="logo"><img src="images/logo.png" /></div></a>
+
+        <ul class="nav">
+            <a href="index.html"><li class="nav-child"><p class="title">首页</p></li></a>
+            <a href="lottery_home.html"><li class="nav-child on"><p class="title">彩票大厅</p></li></a>
+            <a href="wap.html"><li class="nav-child"><p class="title">手机购彩</p></li></a>
+            <a href="help.html"><li class="nav-child"><p class="title">帮助中心</p></li></a>
+            <a href="activity.html"><li class="nav-child"><p class="title">活动专区</p></li></a>
+        </ul>
+    </div>
+    </div>
+    <!-- foot over -->
+</div>
+<!-- header over -->
+<div class="stance"></div>
+
+<!-- main -->
+<div class="main">
+    <div class="main-banner"><div class="container">
+        <ul>
+            <li class="child child-red" onclick="changeLottery(0)">
+                <div class="child-icon"><img src="images/lottery_home/icon-hot.png" alt=""></div>
+                <h2 class="child-title">热门</h2>
+            </li>
+            <li class="child child-blue" onclick="changeLottery(1)">
+                <div class="child-icon"><img src="images/lottery_home/icon-all.png" alt=""></div>
+                <h2 class="child-title">全部</h2>
+            </li>
+            <li class="child child-yellow" onclick="changeLottery(2)">
+                <div class="child-icon"><img src="images/lottery_home/icon-ssc.png" alt=""></div>
+                <h2 class="child-title">时时彩</h2>
+            </li>
+            <li class="child child-white" onclick="changeLottery(3)">
+                <div class="child-icon"><img src="images/lottery_home/icon-fenfencai.png" alt=""></div>
+                <h2 class="child-title">分分彩</h2>
+            </li>
+            <li class="child child-white" onclick="changeLottery(4)">
+                <div class="child-icon"><img src="images/lottery_home/icon-k3.png" alt=""></div>
+                <h2 class="child-title">快三</h2>
+            </li>
+            <li class="child child-white" onclick="changeLottery(5)">
+                <div class="child-icon"><img src="images/lottery_home/icon-dpc.png" alt=""></div>
+                <h2 class="child-title">低频彩</h2>
+            </li>
+            <li class="child child-orange" onclick="changeLottery(6)">
+                <div class="child-icon"><img src="images/lottery_home/icon-11xuan5.png" alt=""></div>
+                <h2 class="child-title">11选5</h2>
+            </li>
+            <li class="child child-blue2" onclick="changeLottery(7)">
+                <div class="child-icon"><img src="images/lottery_home/icon-pk10.png" alt=""></div>
+                <h2 class="child-title">PK10</h2>
+            </li>
+
+            <li class="child child-yellow2" onclick="changeLottery(8)">
+                <div class="child-icon"><img src="images/lottery_home/icon-other.png" alt=""></div>
+                <h2 class="child-title">其他</h2>
+            </li>
+
+        </ul>
+        <img src="images/lottery_home/pointer.png" alt="" class="pointer">
+    </div></div>
+
+    <!-- main-content -->
+    <div class="main-content"><div class="container">
+        <a href="zst_k3.html"><div class="head"><p>走势图</p></div></a>
+
+
+        <!-- content -->
+        <div class="content">
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child child-gray">
+                <div class="child-icon"><img src="images/lottery_home/i-11xuan5.png" alt=""></div>
+                <h2 class="child-title">山东11选5</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-3d.png" alt=""></div>
+                <h2 class="child-title">3D</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+        </div>
+        <!-- content over -->
+
+
+
+        <!-- content -->
+        <div class="content">
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩q</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child child-gray">
+                <div class="child-icon"><img src="images/lottery_home/i-11xuan5.png" alt=""></div>
+                <h2 class="child-title">山东11选5</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-3d.png" alt=""></div>
+                <h2 class="child-title">3D</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child child-gray">
+                <div class="child-icon"><img src="images/lottery_home/i-kuaile8.png" alt=""></div>
+                <h2 class="child-title">快乐8</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child child-gray">
+                <div class="child-icon"><img src="images/lottery_home/i-k3.png" alt=""></div>
+                <h2 class="child-title">山东快3</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-pk10.png" alt=""></div>
+                <h2 class="child-title">pk10</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child child-gray">
+                <div class="child-icon"><img src="images/lottery_home/i-3d.png" alt=""></div>
+                <h2 class="child-title">3D</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-dpc.png" alt=""></div>
+                <h2 class="child-title">低频彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-pk10.png" alt=""></div>
+                <h2 class="child-title">pk10</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child child-gray">
+                <div class="child-icon"><img src="images/lottery_home/i-3d.png" alt=""></div>
+                <h2 class="child-title">3D</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div><div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-dpc.png" alt=""></div>
+                <h2 class="child-title">低频彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+        </div>
+        <!-- content over -->
+
+
+        <!-- content -->
+        <div class="content">
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+            <div class="child">
+                <div class="child-icon"><img src="images/lottery_home/i-ssc.png" alt=""></div>
+                <h2 class="child-title">重庆时时彩</h2>
+                <div class="child-hide">
+                    <div class="child-bg"></div>
+                    <a href="#"><div class="button button-red">立即投注</div></a>
+                    <img src="images/lottery_home/question.png" alt="" class="question">
+                </div>
+            </div>
+        </div>
+        <!-- content over -->
+
+    </div></div>
+    <!-- main-content over -->
+</div>
+<!-- main over -->
+<!-- fixed -->
+<div class="fixed">
+	<div class="child-top" onClick="base.urlhref({'element':'body'})"><div class="center"><img src="images/f1.png" /></div></div>
+    <div class="child-custom" onClick="online_show()"><div class="center"><img src="images/f2.png" /></div></div>
+    <div class="child" onClick="online_show()"><div class="center"><img src="images/f3.png" /></div></div>
+    <div class="child" onClick="online_show()"><div class="center"><img src="images/f4.png" /></div></div>
+    <div class="child"><div class="center"><img src="images/f5.png" /></div><div class="msg msg1"><p>客服电话：00-0877-58889</p><img class="pointer" src="images/fix_pointer.png" /></div></div>
+    <div class="child no"><div class="center"><img src="images/f6.png" /></div><div class="msg msg2"><p><img src="images/code.jpg" /></p><img class="pointer" src="images/fix_pointer.png" /></div></div>
+</div>
+<!-- fixed over -->
+
+<!-- footer -->
+<div class="footer">
+
+    <div class="foot">
+    <div class="container">
+    	<div class="copyright"><span>Copyright & 2015 www.jinying.com   Carparintcn.AII Rtghis Rescrvcd.</span></div>
+
+        <ul class="nav">
+        	<a href="#"><li><img src="images/foot_pointer.png"><span>玩法介绍</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>如何充值</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>提现须知</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>添加收藏</span></li></a>
+        </ul>
+    </div>
+    </div>
+</div>
+<!-- footer over -->
+
+<script src="assets/jquery/jquery.js"></script>
+<script src="js/base.js"></script>
+<script src="js/lottery_home.js"></script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/indexAn.css" />
+</head>
+
+<body>
+
+<!-- header -->
+<div class="header">
+	<!-- head -->
+	<div class="head">
+	<div class="container">
+    	<p class="gmt"><img src="images/GMT.png" /><span></span></p>
+        <ul class="nav">
+        	<a href="rechargewithdraw_fund.html"><li><p>充值</p></li></a>
+            <a href="rechargewithdraw_withdraw.html"><li><p>提现</p></li></a>
+            <li><a href="user_note_inbox_list.html  "><div class="mun">0</div></a>
+            	<div class="list mun-list" >
+                <div class="m-title">我的未读消息(0) <a href="user_note_inbox_list">更多 >></a></div>
+                <div class="center">
+                	<p class="m-msg">暂未收到新消息</p>
+                	<a href="user_note_detail.html"><div class="list-child"><p>信息1</p></div></a>
+                    <a href="user_note_detail.html"><div class="list-child"><p>信息2</p></div></a>
+                </div></div>
+            </li>
+            <li><p>余额：10000.00 <img src="images/refreshBall.png"></p></li>
+
+            <li><p>我的账户<img src="images/nav-pointer.png" /></p>
+            	<div class="list"><div class="center">
+                	<a href="user_info_save.html"><div class="list-child">账户预览</div></a>
+                    <a href="user_center.html"><div class="list-child">会员中心</div></a>
+                    <a href="user_order.html"><div class="list-child">投注历史</div></a>
+                    <a href="money_detailed_report.html"><div class="list-child">账户明细</div></a>
+                    <a href="user_team_list_users.html"><div class="list-child">代理中心</div></a>
+                    <a href="user_my_contract.html"><div class="list-child">我的契约</div></a>
+                    <a href="user_my_dailyPay.html"><div class="list-child">我的日工资</div></a>
+                    <a href="login.html"><div class="list-child">退出登录</div></a>
+                </div></div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <!-- head over -->
+    <!-- foot -->
+    <div class="foot">
+    <div class="container">
+        <a href="index.html"><div class="logo"><img src="images/logo.png" /></div></a>
+
+        <ul class="nav">
+        	<a href="index.html"><li class="nav-child on"><p class="title">首页</p></li></a>
+        	<a href="lottery_home.html"><li class="nav-child"><p class="title">彩票大厅</p></li></a>
+            <a href="wap.html"><li class="nav-child"><p class="title">手机购彩</p></li></a>
+            <a href="help.html"><li class="nav-child"><p class="title">帮助中心</p></li></a>
+            <a href="activity.html"><li class="nav-child"><p class="title">活动专区</p></li></a>
+        </ul>
+    </div>
+    </div>
+    <!-- foot over -->
+</div>
+<!-- header over -->
+<div class="stance"></div>
+<div class="loading">
+	<img class="logo" src="images/logo_loading.png" />
+    <p class="title"><img src="images/loading.gif" /></p>
+</div>
+<!-- 需要加载的图片 -->
+<div class="alert-msg-bg" style="display:none;"></div>
+<div class="alert-msg alert-msg2" style="min-height:initial;display:none;">
+    <div class="msg-head">
+        <p>温馨提示</p><img class="close" src="images/user/close.png" onClick="msg_hide()" />
+    </div>
+    <div class="msg-content">
+        <p class="msg-title" style="text-align:center;">请在新页面上完成汇款</p>
+        <div class="btn"><input type="button" class="inputBtn" value="查看付款结果" /><input type="button" class="inputBtn gray" value="继续付款" /></div>
+    </div>
+</div>
+
+
+<div id="J_androidPopup" class="popup-android popup" style="z-index: 99999; position: fixed; top: 50%;margin:0 auto;margin-top:-217px; left: 0;right:0px;">
+    <div class="clearfix">
+        <div class="box">
+            <p class="title"><strong>方法1</strong>手机扫码安装</p>
+            <p class="tips">使用微信或其他工具<em>扫描二维码</em></p>
+            <p class="qrc"><img src="images/site/qrcode.png"></p>
+            <p class="tips"><span style="color: red;">温馨提醒</span>：使用微信扫一扫时，请点</p>
+            <p class="tips">击右上角的按钮，选择在浏览器中打开</p>
+        </div>
+        <div class="box">
+            <p class="title"><strong>方法2</strong>手机扫码安装</p>
+            <p>请选择以下下载地址：</p>
+            <p><a href="http://www.bangbbs.com/download.aspx?id=40199&amp;filetype=apk" target="_blank">下载地址1</a></p>
+            <p>手机连接电脑，打开同步软件安装</p>
+            <p>（下载<a href="#" target="_blank">91助手</a>, <a href="#" target="_blank">PP助手</a>）</p>
+        </div>
+    </div>
+    <div class="help">
+        <p>安装有问题？<a href="#" target="_blank">更多帮助 &gt;</a></p>
+    </div>
+    <i hook="close" class="close"></i>
+</div>
+
+
+<div id="J_iphonePopup" class="popup-iphone popup" style="z-index: 99999; position: fixed; top: 50%;margin:0 auto;margin-top:-236px; left: 0;right:0px;">
+    <div class="box">
+        <p class="title">手机扫码安装</p>
+        <p class="tips">使用微信或其他工具<em>扫描二维码</em></p>
+        <p class="qrc"><img src="images/site/qrcode.png"></p>
+        <p class="tips">在打开页面后下载后<em>进行安装</em></p>
+    </div>
+    <div class="help">
+        <p><em>温馨提示：</em>IOS9 安装会出现“未受信任的企业级开发者”，解决办法“设置——通用——描述文件——选择：Dongguan SuoCheng...——信任”。</p>
+        <p><a href="#" target="_blank">点击查看图文解说</a></p>
+    </div>
+    <i hook="close" class="close"></i>
+</div>
+
+<!-- <div class="tip">
+    <img class="tip-close" src="images/icon-close.png" alt="">
+    <div class="tip-logo"><img src="images/logo_loading.png" alt=""></div>
+    <div class="tip-content">
+        <h2 class="title">下午好,感谢您的到来~</h2>
+        <p>Good afternoon and welcome</p>
+    </div>
+</div> -->
+
+<!-- banner -->
+<div class="banner">
+	<a href="http://www.baidu.com" target="_blank"><div class="content load-image" style="background-image:url(images/index/banner_bg3.jpg);"></div></a>
+    <a href="http://www.baidu.com" target="_blank"><div class="content load-image" style="background-image:url(images/index/banner_bg.jpg);"></div></a>
+    <a href="http://www.baidu.com" target="_blank"><div class="content load-image" style="background-image:url(images/index/banner_bg2.jpg);"></div></a>
+
+    <img class="btn left-btn" onClick="banner.todo({'direc':'-'})" src="images/index/left-btn.png" />
+    <img class="btn right-btn" onClick="banner.todo({'direc':'+'})" src="images/index/right-btn.png" />
+
+    <div class="nav"></div>
+</div>
+<!-- banner over -->
+
+<!-- main -->
+<div class="main">
+<div class="container">
+	<!-- lottery -->
+    <div class="lottery">
+
+    	<!-- timely -->
+        <div class="timely-pointer"><img src="images/index/nav-top.png" /></div>
+    	<div class="timely">
+        	<div class="timely-title"><img src="images/index/l1title.png" /></div>
+
+            <p class="time1">距离<span>20160214-056</span>期截止</p>
+			<!-- <div class="muns muns-shishicai">
+            	<div class="child child0"><div class="bg"></div><p class="child-title">3</p></div>
+                <div class="child child1"><div class="bg"></div><p class="child-title">1</p></div>
+                <div class="child child2"><div class="bg"></div><p class="child-title">6</p></div>
+                <div class="child child3"><div class="bg"></div><p class="child-title">8</p></div>
+                <div class="child child4"><div class="bg"></div><p class="child-title">2</p></div>
+            </div> -->
+
+            <!-- <div class="muns muns-pk10">
+                <div class="child child0"><div class="bg"></div><p class="child-title">03</p></div>
+                <div class="child child1"><div class="bg"></div><p class="child-title">01</p></div>
+                <div class="child child2"><div class="bg"></div><p class="child-title">06</p></div>
+                <div class="child child3"><div class="bg"></div><p class="child-title">08</p></div>
+                <div class="child child4"><div class="bg"></div><p class="child-title">02</p></div>
+                <div class="child child5"><div class="bg"></div><p class="child-title">02</p></div>
+                <div class="child child6"><div class="bg"></div><p class="child-title">02</p></div>
+                <div class="child child7"><div class="bg"></div><p class="child-title">02</p></div>
+                <div class="child child8"><div class="bg"></div><p class="child-title">02</p></div>
+                <div class="child child9"><div class="bg"></div><p class="child-title">02</p></div>
+                <div class="child child10"><div class="bg"></div><p class="child-title">02</p></div>
+            </div> -->
+
+            <div class="muns muns-k3">
+                <div class="btn s1"></div>
+                <div class="btn s2"></div>
+                <div class="btn s3"></div>
+            </div>
+
+
+
+            <p class="time-title">开始倒计时</p>
+            <div class="time">
+            	<span class="m">01</span>:<span class="s">59</span>
+            </div>
+            <div class="button button-yellow">立即投注</div>
+        </div>
+        <!-- timely -->
+        <!-- classify -->
+        <div class="classify">
+        	<div class="classify-alert">
+                <img class="pointer" src="images/index/l_pointer.png" />
+            	<div class="classify-alert-container">
+                	<ul>
+                    	<li data-name="金鹰" data-image="images/index/l5_on.png"><p><input type="checkbox" class="checkbox" />金鹰分分彩</p></li>
+                        <li data-name="金鹰" data-image="images/index/l5_on.png"><p><input type="checkbox" class="checkbox" />金鹰三分彩</p></li>
+                        <li data-name="金鹰" data-image="images/index/l5_on.png"><p><input type="checkbox" class="checkbox" />金鹰五分彩</p></li>
+                        <li data-name="重庆" data-image="images/index/l1_on.png"><p><input type="checkbox" class="checkbox" />重庆时时彩</p></li>
+                        <li data-name="天津" data-image="images/index/l1_on.png"><p><input type="checkbox" class="checkbox" />天津时时彩</p></li>
+                        <li data-name="新疆" data-image="images/index/l1_on.png"><p><input type="checkbox" class="checkbox" />新疆时时彩</p></li>
+                    </ul>
+                    <ul>
+                    	<li data-name="山东" data-image="images/index/l4_on.png"><p><input type="checkbox" class="checkbox" />山东11选5</p></li>
+                        <li data-name="广东" data-image="images/index/l4_on.png"><p><input type="checkbox" class="checkbox" />广东11选5</p></li>
+                        <li data-name="江西" data-image="images/index/l4_on.png"><p><input type="checkbox" class="checkbox" />江西11选5</p></li>
+                        <li data-name="福建" data-image="images/index/l4_on.png"><p><input type="checkbox" class="checkbox" />福建11选5</p></li>
+                    </ul>
+                    <ul>
+                    	<li data-name="江苏" data-image="images/index/l7_on.png"><p><input type="checkbox" class="checkbox" />江苏快3</p></li>
+                        <li data-name="安徽" data-image="images/index/l7_on.png"><p><input type="checkbox" class="checkbox" />安徽快3</p></li>
+                        <li data-name="吉林" data-image="images/index/l7_on.png"><p><input type="checkbox" class="checkbox" />吉林快3</p></li>
+                        <li data-name="湖北" data-image="images/index/l7_on.png"><p><input type="checkbox" class="checkbox" />湖北快3</p></li>
+                    </ul>
+                    <ul>
+                    	<li data-name="江苏" data-image="images/index/l3_on.png"><p><input type="checkbox" class="checkbox" />江苏骰宝</p></li>
+                        <li data-name="安徽" data-image="images/index/l3_on.png"><p><input type="checkbox" class="checkbox" />安徽骰宝</p></li>
+                        <li data-name="吉林" data-image="images/index/l3_on.png"><p><input type="checkbox" class="checkbox" />吉林骰宝</p></li>
+                        <li data-name="湖北" data-image="images/index/l3_on.png"><p><input type="checkbox" class="checkbox" />湖北骰宝</p></li>
+                    </ul>
+                    <ul>
+                    	<li data-name="福彩" data-image="images/index/l7_on.png"><p><input type="checkbox" class="checkbox" />福彩3D</p></li>
+                        <li data-name="六合彩" data-image="images/index/l6_on.png"><p><input type="checkbox" class="checkbox" />六合彩</p></li>
+                    </ul>
+                    <ul>
+                    	<li data-name="背景" data-image="images/index/l2_on.png"><p><input type="checkbox" class="checkbox" />北京PK10</p></li>
+                    </ul>
+                </div>
+                <div class="classify-alert-foot">
+                	<p class="title">添加自己常玩的彩种</p>
+                    <div class="btn btn1" onClick="set_submit()">确定</div><div class="btn btn2" onClick="set_click()">取消</div>
+                </div>
+            </div>
+
+
+        	<a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l1_on.png" /></div>
+                <p class="child-title">重庆</p>
+            </div></div></a>
+            <a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l2_on.png" /></div>
+                <p class="child-title">北京</p>
+            </div></div></a>
+            <a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l3_on.png" /></div>
+                <p class="child-title">江苏</p>
+            </div></div></a>
+            <a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l4_on.png" /></div>
+                <p class="child-title">山东</p>
+            </div></div></a>
+            <a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l5_on.png" /></div>
+                <p class="child-title">金鹰</p>
+            </div></div></a>
+            <a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l10_on.png" /></div>
+                <p class="child-title">六合彩</p>
+            </div></div></a>
+            <a href="#"><div class="child"><div class="center">
+            	<div class="child-img"><img src="images/index/l9_on.png" /></div>
+                <p class="child-title">天津</p>
+            </div></div></a>
+            <div class="child" onClick="set_click()"><div class="center">
+            	<div class="child-icon"><img src="images/index/add_icon.png" /></div>
+            </div></div>
+        </div>
+        <!-- classify over -->
+        <!-- notice -->
+        <div class="notice"><div class="center">
+        	<div class="notice-title"><p>中奖通告</p></div>
+           	<div class="notice-container">
+            	<ul>
+                	<li><p><span>[q***a]</span>在3D贏得1,700元</p></li>
+                    <li><p><span>[q***a]</span>在山东11选5贏得22,110元</p></li>
+                    <li><p><span>[q***a]</span>在顺利秒秒彩贏得3,429元</p></li>
+                    <li><p><span>[q***a]</span>在江苏快三贏得2,100元</p></li>
+                    <li><p><span>[q***a]</span>在北京快乐8贏得5,688元</p></li>
+                    <li><p><span>[q***a]</span>在江苏骰宝贏得1,000元</p></li>
+                    <li><p><span>[q***a]</span>在广东11选5贏得4,950元</p></li>
+                    <li><p><span>[q***a]</span>在3D贏得1,700元</p></li>
+                    <li><p><span>[q***a]</span>在山东11选5贏得22,110元</p></li>
+                    <li><p><span>[q***a]</span>在顺利秒秒彩贏得3,429元</p></li>
+                    <li><p><span>[q***a]</span>在江苏快三贏得2,100元</p></li>
+                    <li><p><span>[q***a]</span>在北京快乐8贏得5,688元</p></li>
+                    <li><p><span>[q***a]</span>在江苏骰宝贏得1,000元</p></li>
+                    <li><p><span>[q***a]</span>在广东11选5贏得4,950元</p></li>
+                </ul>
+            </div>
+        </div></div>
+        <!-- notice over -->
+    </div>
+    <!-- lottery over -->
+
+    <!-- mainnav -->
+    <div class="mainnav">
+
+    	<a href="person.html"><div class="child">
+        	<img class="child-bg" src="images/index/home-nav-bg1.png" />
+            <img class="child-title" src="images/index/home-nav1.png" />
+        </div></a>
+        <a href="person.html"><div class="child">
+        	<img class="child-bg" src="images/index/home-nav-bg2.png" />
+            <img class="child-title" src="images/index/home-nav2.png" />
+        </div></a>
+        <a href="game.html"><div class="child">
+        	<img class="child-bg" src="images/index/home-nav-bg3.png" />
+            <img class="child-title" src="images/index/home-nav3.png" />
+        </div></a>
+        <a href="sport.html"><div class="child no">
+            <img class="child-bg" src="images/index/home-nav-bg4.png" />
+            <img class="child-title" src="images/index/home-nav4.png" />
+        </div></a>
+
+    </div>
+    <!-- mainnav over -->
+
+    <!-- other -->
+    <div class="other">
+
+        <!-- consumtime -->
+        <div class="child consumtime">
+            <h2 class="child-title">服务体验</h2>
+            <div class="child-content">
+                <div class="process">
+                    <h3 class="process-title">昨日充值到账平均时间</h3>
+                    <div class="process-content">
+                        <div class="process-ing process-yellow" data-process="60"></div>
+                    </div>
+                    <h3 class="process-second"><span>10</span>秒</h3>
+                </div>
+                <div class="process">
+                    <h3 class="process-title">昨日提现到账平均时间</h3>
+                    <div class="process-content">
+                        <div class="process-ing process-blue" data-process="80"></div>
+                    </div>
+                    <h3 class="process-second"><span>5</span>秒</h3>
+                </div>
+            </div>
+        </div>
+        <!-- consumtime over -->
+
+        <!-- recharge -->
+        <div class="child recharge">
+            <h2 class="child-title">充值方式</h2>
+            <div class="child-content">
+                <a href="#"><div class="recharge-child">
+                    <div class="icon"><img src="images/index/recharge_wechat.png" alt=""></div>
+                    <h3 class="title">微信支付</h3>
+                </div></a>
+                <a href="#"><div class="recharge-child">
+                    <div class="icon"><img src="images/index/recharge_alipay.png" alt=""></div>
+                    <h3 class="title">支付宝</h3>
+                </div></a>
+                <a href="#"><div class="recharge-child">
+                    <div class="icon"><img src="images/index/recharge_yinlian.png" alt=""></div>
+                    <h3 class="title">银联</h3>
+                </div></a>
+            </div>
+        </div>
+        <!-- recharge over -->
+
+        <!-- download -->
+        <!-- <div class="child download">
+            <h2 class="child-title">手机下载</h2>
+            <div class="child-content">
+                <div class="download-child download-child-android" onclick="javascript:$('.popup-android').show()">
+                    <div class="download-child-img" ><img src="images/index/download-android.png" alt=""></div>
+                    <h3 class="download-child-title">支持Android2.2或以上</h3>
+                </div>
+                <div class="download-child download-child-ios" onclick="javascript:$('.popup-iphone').show()">
+                    <div class="download-child-img"><img src="images/index/download-ios.png" alt=""></div>
+                    <h3 class="download-child-title">支持IOS4.3或以上</h3>
+                </div>
+            </div>
+        </div> -->
+        <!-- download over -->
+
+        <!-- wapcode -->
+        <div class="child wapcode">
+            <h2 class="child-title">移动版二维码</h2>
+            <div class="child-content">
+                <div class="btn code-btn">
+                    <p class="btn-title">扫描二维码</p>
+                    <div class="code">
+                        <img class="img" src="images/wap/code.jpg" alt="">
+                        <p class="title">扫码打开手机版</p>
+                        <img class="pointer" src="images/wap/pointer.png" alt="">
+                    </div>
+                </div>
+                <h3 class="code-child-title">支持Android2.2或以上</h3>
+            </div>
+            <!-- <div class="child-content">
+                <img src="images/wap/code.jpg" alt="">
+            </div> -->
+        </div>
+        <!-- wapcode over -->
+
+    </div>
+    <!-- other over -->
+
+</div>
+</div>
+<!-- main over -->
+<!-- fixed -->
+<div class="fixed">
+	<div class="child-top" onClick="base.urlhref({'element':'body'})"><div class="center"><img src="images/f1.png" /></div></div>
+    <div class="child-custom" onClick="online_show()"><div class="center"><img src="images/f2.png" /></div></div>
+    <div class="child" onClick="online_show()"><div class="center"><img src="images/f3.png" /></div></div>
+    <div class="child" onClick="online_show()"><div class="center"><img src="images/f4.png" /></div></div>
+    <div class="child"><div class="center"><img src="images/f5.png" /></div><div class="msg msg1"><p>客服电话：00-0877-58889588895888958889</p><img class="pointer" src="images/fix_pointer.png" /></div></div>
+    <div class="child no"><div class="center"><img src="images/f6.png" /></div><div class="msg msg2"><p><img src="images/code.jpg" /></p><img class="pointer" src="images/fix_pointer.png" /></div></div>
+
+    <div class="child-pointer"><img src="images/fixed-pointer.png" alt=""></div>
+</div>
+<!-- fixed over -->
+
+
+<!-- online -->
+<div class="online-bg"></div>
+<div class="online" >
+    <div class="online-element">
+        <div class="head"><img src="images/online/t1.png" /></div>
+        <div class="content">
+            <ul>
+                <li>
+                    <div class="headimg"><img src="images/online/custom1.png" /></div>
+                    <p class="title">在线客服</p><img class="pointer" src="images/online/custom_pointer.png" />
+                <div class="sub"></div></li>
+                <li>
+                    <div class="headimg"><img src="images/online/custom2.png" /></div>
+                    <p class="title">上级</p><img class="pointer" src="images/online/custom_pointer.png" />
+                <div class="sub"></div></li>
+                <li class="no">
+                    <div class="headimg"><img src="images/online/custom2.png" /></div>
+                    <p class="title">下级</p><img class="pointer" src="images/online/custom_pointer.png" />
+                <div class="sub"></div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="online-container">
+        <div class="head">
+            <div class="headimg"><img src="images/online/custom1.png" /></div>
+            <p class="title">在线客服<span>(在线)</span></p>
+            <img class="o_btn sub_btn" src="images/online/custom_sub.png" onClick="online_hide()" />
+            <img class="o_btn close_btn" src="images/online/custom_close.png" onClick="online_hide()" />
+        </div>
+        <div class="online-window">
+            <ul>
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+                <!-- 客服 -->
+                <li class="left">
+                    <div class="headimg"><img src="images/online/custom1.png" /></div>
+                    <div class="li-content">
+                        <p class="title">在线客服 </p>
+                        <div class="info">
+                            <p>你好，有什么可以帮你的？</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="left">
+                    <div class="headimg"><img src="images/online/custom1.png" /></div>
+                    <div class="li-content">
+                        <p class="title">在线客服 </p>
+                        <div class="info">
+                            <p>你好，还想要帮助吗？韩冰云！～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 客服 -->
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+                <!-- 我的记录 -->
+                <li class="right">
+                    <div class="headimg"><img src="images/online/custom3.png" /></div>
+                    <div class="li-content">
+                        <p class="title">我 (iceart2016)</p>
+                        <div class="info">
+                            <p>你好，我有问题需要解决～</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 我的记录 -->
+
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="send1">
+                <img src="images/online/i.png" /><span>聊天记录</span>
+            </div>
+            <div class="send">
+                <div class="send-editor"><textarea></textarea></div>
+                <div class="send-btn">发送</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- online over -->
+
+<!-- footer -->
+<div class="footer">
+	<div class="head">
+    <div class="container">
+    	<div class="head-child head-child-left">
+        	<p class="c-title">支持浏览器</p>
+            <div class="childs">
+            	<a href="https://support.apple.com/downloads/safari" target="_blank"><img src="images/index/s1.png" /></a>
+                <a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-11-worldwide-languages/" target="_blank"><img src="images/index/s2.png" /></a>
+                <a href="http://www.google.cn/chrome/browser/" target="_blank"><img src="images/index/s3.png" /></a>
+                <a href="http://www.firefox.com.cn/" target="_blank"><img src="images/index/s4.png" /></a>
+            </div>
+        </div>
+        <div class="head-child head-child-right">
+        	<p class="c-title">合作伙伴</p>
+            <div class="childs">
+            	<img src="images/index/c1.png" />
+               	<img src="images/index/c2.png" />
+                <img src="images/index/c3.png" />
+                <img src="images/index/c4.png" />
+                <img src="images/index/c5.png" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="foot">
+    <div class="container">
+    	<div class="copyright"><span>Copyright & 2015 www.jinying.com   Carparintcn.AII Rtghis Rescrvcd.</span></div>
+
+        <ul class="nav">
+        	<a href="#"><li><img src="images/foot_pointer.png"><span>玩法介绍</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>如何充值</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>提现须知</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>添加收藏</span></li></a>
+        </ul>
+    </div>
+    </div>
+</div>
+<!-- footer over -->
+
+<script src="assets/jquery/jquery.js"></script>
+<script src="assets/jquery/jquery.easing.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+<script src="assets/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/dydong.keepScroll.js"></script>
+<script src="js/dydong.change.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>

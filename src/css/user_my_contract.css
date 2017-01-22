@@ -1,0 +1,17 @@
+.main .content{padding:0;}
+.main .content .msgs{padding:12px 28px;border-bottom:1px solid #e3e3e3;}
+.main .content .msgs p.msg-title{font-weight: bold;color:#0090ff;}
+.main .content .msgs p{color:#666;font-size:14px; line-height: 24px;}
+.main .content .content-line{position:relative;padding:34px 30px;border-bottom:1px solid #e3e3e3;}
+.main .content .content-line.even{background:#f7f7f7;}
+.main .content .content-line .c-title{line-height:28px;color:#0090ff;font-size:18px;}
+.main .content .content-line .info{font-size:13px;color:#202020;line-height:24px;width:840px;}
+.main .content .content-line .red{color:#FF2B2B;}
+.main .content .content-line .yellow{color:#F2A000;}
+.main .content .content-line .blue{color:#006BFF;}
+.main .content .content-line .btn{position:absolute;top:0px;bottom:0px;right:30px;margin:auto 0;width:170px;height:46px;line-height:46px;text-align:center;background:#67cfff;color:#fff;font-size:18px;border-radius:46px;-webkit-border-radius:46px;
+*top:40px;}
+.main .content .content-line .btn.on{cursor:pointer;background:#0090ff;transition-duration: .3s;-webkit-transition-duration:.3s;}
+.main .content .content-line .btn.on:hover{background:#0076d2;}
+.main .content .no-border{text-align:center;padding:20px 0;}
+.main .content .no-border .submitBtn{margin:0 12px;}

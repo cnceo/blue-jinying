@@ -1,0 +1,56 @@
+
+index.html									主页
+login.html									登录
+enroll.html									注册
+retrieve.html								找回密码
+retrieve_mode.html							找回密码1
+retrieve_mode_mq.html						找回密码2
+retrieve_reset.html							找回密码3
+lottery_home.html							彩票大厅
+wap.html									手机购彩
+help.html									帮助中心
+activity.html								活动专区
+activity_detail.html						活动详细
+
+rechargewithdraw_fund.html					充值
+rechargewithdraw_withdraw.html				提现
+
+user_info_save.html							账户总览
+user_center.html							会员管理
+user_info_password.html						密码修改
+user_info_save_question.html				验证安全问题
+user_info_question_edit.html				修改安全问题
+user_info_bank.html							银行卡管理
+
+user_info_detail.html						个人资料
+user_info_bank.html							绑定卡号
+user_recharge_order.html					充值记录
+user_withdraw_order.html					提现记录
+
+consume_history_report.html					历史盈亏
+consume_report.html							实时盈亏
+money_detailed_report.html					帐变列表
+user_order.html								投注明细
+lotterymsg.html								投注明细详细
+user_order_afternum.html					追号记录
+lotteryafternumbermsg.html					追号记录详细
+user_salary_afternum.html					工资记录
+user_dividend_record.html					契约分红
+
+
+user_team_list_users.html					团队列表
+user_editor.html							升点
+user_team_treatment_apply.html				代理福利
+user_team_user_add.html						注册下级
+user_extend.html							链接开户
+user_extend_magr.html						链接管理
+user_extend_detail.html						链接管理详细
+user_my_contract.html						我的契约
+user_my_dailyPay.html						我的日工资
+
+user_note_inbox_list.html					收件箱
+user_note_my_send_list.html					发件箱
+user_note_send.html							编写信息
+user_note_detail.html						邮件详细
+user_note_send.html							上级发信
+user_note_sendToDown.html					下级发信

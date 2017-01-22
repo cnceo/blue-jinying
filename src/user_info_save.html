@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/user_base.css" />
+<link rel="stylesheet" type="text/css" href="css/user_info_save.css" />
+</head>
+
+<body>
+
+
+<!-- header -->
+<div class="header">
+    <!-- head -->
+    <div class="head">
+    <div class="container">
+        <p class="gmt"><img src="images/GMT.png" /><span></span></p>
+        <ul class="nav">
+            <a href="rechargewithdraw_fund.html"><li><p>充值</p></li></a>
+            <a href="rechargewithdraw_withdraw.html"><li><p>提现</p></li></a>
+            <li><a href="user_note_inbox_list.html  "><div class="mun">0</div></a>
+                <div class="list mun-list" >
+                <div class="m-title">我的未读消息(0) <a href="user_note_inbox_list">更多 >></a></div>
+                <div class="center">
+                    <p class="m-msg">暂未收到新消息</p>
+                    <a href="user_note_detail.html"><div class="list-child"><p>信息1</p></div></a>
+                    <a href="user_note_detail.html"><div class="list-child"><p>信息2</p></div></a>
+                </div></div>
+            </li>
+            <li><p>余额：10000.00 <img src="images/refreshBall.png"></p></li>
+           
+            <li><p>我的账户<img src="images/nav-pointer.png" /></p>
+                <div class="list"><div class="center">
+                    <a href="user_info_save.html"><div class="list-child">账户预览</div></a>
+                    <a href="user_center.html"><div class="list-child">会员中心</div></a>
+                    <a href="user_order.html"><div class="list-child">投注历史</div></a>
+                    <a href="money_detailed_report.html"><div class="list-child">账户明细</div></a>
+                    <a href="user_team_list_users.html"><div class="list-child">代理中心</div></a>
+                    <a href="user_my_contract.html"><div class="list-child">我的契约</div></a>
+                    <a href="user_my_dailyPay.html"><div class="list-child">我的日工资</div></a>
+                    <a href="login.html"><div class="list-child">退出登录</div></a>
+                </div></div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <!-- head over -->
+    <!-- foot -->
+    <div class="foot">
+    <div class="container">
+        <a href="index.html"><div class="logo"><img src="images/logo.png" /></div></a>
+        
+        <ul class="nav">
+            <a href="index.html"><li class="nav-child on"><p class="title">首页</p></li></a>
+            <a href="lottery_home.html"><li class="nav-child"><p class="title">彩票大厅</p></li></a>
+            <a href="wap.html"><li class="nav-child"><p class="title">手机购彩</p></li></a>
+            <a href="help.html"><li class="nav-child"><p class="title">帮助中心</p></li></a>
+            <a href="activity.html"><li class="nav-child"><p class="title">活动专区</p></li></a>
+        </ul>
+    </div>
+    </div>
+    <!-- foot over -->
+</div>
+<!-- header over -->
+<div class="stance"></div>
+
+<!-- m-banner -->
+<div class="m-banner" style="background-image:url(images/user/head_bg.jpg);">
+    <div class="banner-content container">
+        <div class="first">
+            <div class="bg"></div>
+            <div class="head-img"><img src="images/user/headimg.png" /></div>
+            <div class="head-content">
+                <p class="title">下午好，Iceart2016</p>
+                <p class="info">当前模式：1910</p>
+                <div class="btns">
+                    <a href="user2.html">修改资料</a><a href="v">绑定银行卡</a>
+                </div>
+            </div>
+        </div>
+        <div class="lists">
+
+            <a href="user_info_save.html"><div class="child child1 on"><div class="bg"></div>
+                <div class="child-image"></div><p class="child-title">账户总览</p>
+            </div></a>
+            <a href="user_recharge_order.html"><div class="child child2"><div class="bg"></div>
+                <div class="child-image"></div><p class="child-title">财务中心</p>
+            </div></a>
+            <a href="consume_history_report.html"><div class="child child3"><div class="bg"></div>
+                <div class="child-image"></div><p class="child-title">订单报表</p>
+            </div></a>
+            <a href="user_team_list_users.html"><div class="child child4"><div class="bg"></div>
+                <div class="child-image"></div><p class="child-title">代理中心</p>
+            </div></a>
+            <a href="user_note_inbox_list.html"><div class="child child5"><div class="bg"></div>
+                <div class="child-image"></div><p class="child-title">消息中心</p>
+            </div></a>
+            <a href="login.html"><div class="child child6 no"><div class="bg"></div>
+                <div class="child-image"></div><p class="child-title">退出</p>
+            </div></a>
+        
+        </div>
+    </div>
+</div>
+<!-- m-banner over -->
+
+<!-- main -->
+<div class="main"><div class="container">
+	<!-- main-info -->
+	<div class="main-info">
+    	<div class="left">
+        	<div class="fraction">
+
+                <canvas width="180" height="180" id="fraction-canvas"></canvas>
+            	<div class="fraction-mun">
+                	<p class="title title1">安全评分</p>
+                    <p class="title title2">50分</p>
+                </div>
+            </div>
+            <div class="infos">
+            	<div class="title">
+                	<img src="images/user/account/pointer.png" /><span>您的帐号存在安全风险，</span>
+                </div>
+                <div class="info">
+                	<p>建议立即优化以下1项：</p>
+                </div>
+            </div>
+            <img class="pointer" src="images/user/center/pointer.png" />
+        </div>
+        <div class="right">
+        	<div class="line">
+            	<div class="line-child">
+                	<p class="title">账户总额</p>
+                    <img class="icon line-reflush" src="images/user/account/reflush.png" />
+                </div>
+                <div class="line-child no">
+                	<p class="title">可提金额</p>
+                </div>
+            </div>
+            <div class="line">
+            	<div class="line-child">
+                	<p class="title money"><span class="money-value" value="¥ 0.0000">¥ 0.0000</span><a href="javascript:void(0);" class="money-toggle">隐藏</a></p>
+                    <a href="rechargewithdraw_fund.html"><div class="btn blue">充值</div></a>
+                </div>
+                <div class="line-child no">
+                	<p class="title money"><span>¥ 0.0000</span></p>
+                    <a href="rechargewithdraw_withdraw.html"><div class="btn yellow">提现</div></a>
+                </div>
+            </div>
+            <div class="line">
+            	<div class="line-child no">
+                	<p class="title">账号管理</p>
+                </div>
+            </div>
+            <div class="line line2">
+            	<div class="line-child">
+                	<p class="title">今日投注： <span>0.0000 元</span> </p>
+                </div>
+                <div class="line-child">
+                	<p class="title">今日中奖： <span>0.0000 元</span> </p>
+                </div>
+                <div class="line-child no">
+                	<p class="title">总存款： <span>0.0000 元</span> </p>
+                </div>
+            </div>
+            <div class="line line2">
+            	<div class="line-child">
+                	<p class="title">总取款： <span>0.0000 元</span> </p>
+                </div>
+                <div class="line-child">
+                	
+                </div>
+                <div class="line-child no">
+                	
+                </div>
+            </div>
+            <div class="foot">
+            	<div class="tools">
+                	<a href="user_info_detail.html"><div class="tools-child">
+                        <img class="img" src="images/user/account/1_on.png" />
+                    	<!-- <img class="img" src="images/user/account/1.png" /> -->
+                    </div></a>
+                    <a href="user_info_detail.html"><div class="tools-child">
+                        <img class="img" src="images/user/account/2_on.png" />
+                    	<!-- <img class="img" src="images/user/account/2.png" /> -->
+                    </div></a>
+                    <a href="user_note_inbox_list.html"><div class="tools-child">
+                    	<img class="img" src="images/user/account/3.png" />
+                        <div class="pointer">5</div>
+                    </div></a>
+                    <a href="user_info_bank.html"><div class="tools-child">
+                        <img class="img" src="images/user/account/4_on.png" />
+                    	<!-- <img class="img" src="images/user/account/4.png" /> -->
+                    </div></a>
+                </div>
+                <div class="msg">
+                	<div class="child">彩票返点：<span>12.50</span>%</div>
+                    <div class="child">真人返水：<span>0.0</span>% </div>
+                    <div class="child">电子返水：<span>0.0</span>%</div>
+                    <div class="child">斗鸡返水：<span>0.0</span>%</div>
+                    <div class="child">体育返水：<span>0.0</span>%</div>
+                    <div class="child">棋牌返水：<span>0.0</span>%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-info over -->
+    <!-- main-list -->
+    <ul class="main-list">
+
+        <li >
+        	<img class="icon" src="images/user/center/icon8.png" />
+            <div class="infos">
+            	<p class="title">会员特权</p>
+                <div class="info">
+                	<p>晋级会员，享受金鹰更多专柜服务，专属客服等至尊特权。</p>
+                </div>
+            </div>
+            <a href="user_center.html"><div class="btn yellow">会员管理</div></a>
+        </li>
+        <li >
+        	<img class="icon" src="images/user/center/icon9.png" />
+            <div class="infos">
+            	<p class="title">登录密码</p>
+                <div class="info">
+                	<p>建议您使用字母和数字的组合、混合大小写、在组合中加入下划线等符号。</p>
+                </div>
+            </div>
+            <img class="sub" src="images/user/center/sub.png" />
+            <div class="progress">
+                <div class="title1">安全</div>
+                <div class="line">
+                    <div class="progress-line">
+                        <div class="now-line" style="width:100%;background:#8ae081;"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="user_info_password.html"><div class="btn blue1">立即修改</div></a>
+        </li>
+        <li >
+        	<img class="icon" src="images/user/center/icon9.png" />
+            <div class="infos">
+            	<p class="title">安全密码</p>
+                <div class="info">
+                	<p>在进行银行卡绑定，转账等资金操作时需要进行安全密码确认，以提高您的资金安全性</p>
+                </div>
+            </div>
+            
+            <a href="user_info_save_question.html"><div class="btn btn2 blue1">找回密码</div></a>
+            <a href="user_info_password.html"><div class="btn blue2">立即修改</div></a>
+        </li>
+        <li >
+        	<img class="icon" src="images/user/center/icon9.png" />
+            <div class="infos">
+            	<p class="title">安全问题</p>
+                <div class="info">
+                	<p>绑定安全问题后可以通过安全问题找回账号资料。</p>
+                </div>
+            </div>
+            
+            <a href="user_info_question_edit.html"><div class="btn red">立即设置</div></a>
+        </li>
+
+        <li >
+        	<img class="icon" src="images/user/center/icon10.png" />
+            <div class="infos">
+            	<p class="title">入款福利</p>
+                <div class="info">
+                	<p>黄金会员入款充值赠送 1.2%</p>
+                </div>
+            </div>
+            <img class="sub" src="images/user/center/sub.png" />
+            <div class="progress">
+                <div class="title1">一般</div>
+                <div class="line">
+                    <div class="progress-line">
+                        <div class="now-line" style="width:50%;background:#ffcf69;"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="user_team_treatment_apply.html"><div class="btn blue1">立即修改</div></a>
+        </li>
+        <li >
+        	<img class="icon" src="images/user/center/icon11.png" />
+            <div class="infos">
+            	<p class="title">月负盈利返利</p>
+                <div class="info">
+                	<p>月负盈利返利，黄金会员 0％</p>
+                </div>
+            </div>
+            <img class="sub" src="images/user/center/sub.png" />
+            <div class="progress">
+                <div class="title1">很差</div>
+                <div class="line">
+                    <div class="progress-line">
+                        <div class="now-line" style="width:20%;background:#ff7f7f;"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="consume_report.html"><div class="btn blue1">立即修改</div></a>
+        </li>
+       
+    </ul>
+    <!-- main-list over -->
+    <!-- main-msg -->
+    <div class="main-msg">
+    	<div class="titles">
+        	<div class="child on">最近投注</div>
+            <div class="child">最近中奖</div>
+        </div>
+        <div class="contents">
+        	<div class="line line-titles">
+            	<div class="child child1">ID</div>
+                <div class="child child2">彩种</div>
+                <div class="child child3">玩法</div>
+                <div class="child child4">期号</div>
+                <div class="child child5">下单时间</div>
+                <div class="child child6">投注金额</div>
+                <div class="child child7">奖金</div>
+                <div class="child child8">状态</div>
+                <div class="child child9">操作</div>
+                <div class="child child10 no">没有投注记录</div>
+            </div>
+            <div class="line">
+            	<p class="no-msg">没有投注记录</p>
+            </div>
+        </div>
+    </div>
+    <!-- main-msg over -->
+    
+</div></div>
+<!-- main over -->
+<!-- fixed -->
+<div class="fixed">
+	<div class="child-top" onClick="base.urlhref({'element':'body'})"><div class="center"><img src="images/f1.png" /></div></div>
+    <div class="child-custom" onClick="online_show()"><div class="center"><img src="images/f2.png" /></div></div>
+    <div class="child" onClick="online_show()"><div class="center"><img src="images/f3.png" /></div></div>
+    <div class="child" onClick="online_show()"><div class="center"><img src="images/f4.png" /></div></div>
+    <div class="child"><div class="center"><img src="images/f5.png" /></div><div class="msg msg1"><p>客服电话：00-0877-58889</p><img class="pointer" src="images/fix_pointer.png" /></div></div>
+    <div class="child no"><div class="center"><img src="images/f6.png" /></div><div class="msg msg2"><p><img src="images/code.jpg" /></p><img class="pointer" src="images/fix_pointer.png" /></div></div>
+</div>
+<!-- fixed over -->
+
+<!-- footer -->
+<div class="footer">
+    
+    <div class="foot">
+    <div class="container">
+    	<div class="copyright"><span>Copyright & 2015 www.jinying.com   Carparintcn.AII Rtghis Rescrvcd.</span></div>
+        
+        <ul class="nav">
+        	<a href="#"><li><img src="images/foot_pointer.png"><span>玩法介绍</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>如何充值</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>提现须知</span></li></a>
+            <a href="#"><li><img src="images/foot_pointer.png"><span>添加收藏</span></li></a>
+        </ul>
+    </div>
+    </div>
+</div>
+<!-- footer over -->
+
+<script src="assets/jquery/jquery.js"></script>
+
+<script src="js/base.js"></script>
+<script src="js/user_base.js"></script>
+<script src="js/user_info_save.js"></script>
+<script type="text/javascript">setQUAN(0.5);//设置安全评分</script>
+</body>
+</html>

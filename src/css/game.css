@@ -1,0 +1,31 @@
+.m-banner{height:655px;background-size:auto 655px;}
+.m-banner .content{bottom:168px;}
+
+.main{padding:30px 0 50px 0;}
+.main .container:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .main-child{width:344px;height:448px;margin-right:32px;margin-bottom:18px;float:left;border-radius:3px;-webkit-border-radius:3px;box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);}
+.main .main-child.no{margin-right:0px;}
+.main .main-child .child-top{position:relative;height:12px;background:#fff;border-radius:3px 3px 0 0;-webkit-border-radius:3px 3px 0 0;z-index:1;}
+.main .main-child .child-top img{position:absolute;left:0px;right:0px;bottom:-9px;height:9px;margin:0 auto;
+*left:50%;*margin-left:-6px;}
+.main .main-child .child-img{position:relative;height:212px;overflow:hidden;}
+.main .main-child .child-img img{width:100%;height:100%; vertical-align:middle;transition-duration: .3s;-webkit-transition-duration:.3s;}
+.main .main-child .child-icon{transition-duration: .3s;-webkit-transition-duration:.3s;position:absolute;top:-66px;left:0px;right:0px;margin:0 auto;width:132px;height:132px;line-height:132px;border:1px solid #efefef;background:#fff;border-radius:132px;-webkit-border-radius:132px;text-align:center;
+*left:50%;*margin-left:-77px;}
+.main .main-child .child-icon img{ transition-duration: .3s;-webkit-transition-duration:.3s;vertical-align:middle;
+*margin-top:26px;}
+.main .main-child .child-content{position:relative;background:#fff;height:224px;border-radius: 0 0 3px 3px;-webkit-border-radius: 0 0 3px 3px;}
+.main .main-child .child-content .title{padding-top:94px;line-height:28px;text-align:center;font-size:20px;color:#000;}
+.main .main-child .child-content .btn{position:absolute;left:0px;right:0px;bottom:20px;margin:0 auto;color:#fff;font-size:18px;transition-duration: .3s;-webkit-transition-duration:.3s;background:#0090ff;width:174px;height:48px;line-height:48px;text-align:center;border-radius:48px;-webkit-border-radius:48px;
+*left:50%;*margin-left:-87px;}
+.main .main-child .child-content .btn:hover{background:#007cdc;}
+.main .main-child:hover .child-img img{ transform:scale(1.1);-webkit-transform:scale(1.1);}
+.main .main-child:hover .child-icon{transform:scale(0.9);-webkit-transform:scale(0.9);}
+@keyframes  main-child{
+0%{ transform:scale(0); opacity:0;}
+100%{transform:scale(1); opacity:1;}
+}
+@-webkit-keyframes main-child{
+0%{ -webkit-transform:scale(0); opacity:0;}
+100%{-webkit-transform:scale(1); opacity:1;}
+}

@@ -1,0 +1,41 @@
+.main{position:relative;}
+.main-banner{text-align:center;position:relative;height:234px;background: center top;background-size:auto 100%;background-image:url(../images/lottery_home/bg.jpg);}
+.main-banner .container{height:100%;}
+.main-banner .child{cursor:pointer;margin:0 12px;display:inline-block;margin-top:60px;}
+.main-banner .child-icon{width:86px;height:86px;line-height:86px;text-align:center;border-radius:6px;-webkit-border-radius:6px;transition-duration: .3s;-webkit-transition-duration: .3s;}
+.main-banner .child-icon img{vertical-align: middle;}
+.main-banner .child-title{margin-top:16px;line-height:22px;text-align:center;color:#fff;font-size:14px;}
+.main-banner .child.child-red .child-icon{background-color:#fe7591;}
+.main-banner .child.child-blue .child-icon{background-color:#55b2f5;}
+.main-banner .child.child-yellow .child-icon{background-color:#ffcc45;}
+.main-banner .child.child-orange .child-icon{background-color:#fc9477;}
+.main-banner .child.child-blue2 .child-icon{background-color:#5897ff;}
+.main-banner .child.child-yellow2 .child-icon{background-color:#ffc445;}
+.main-banner .child.child-white .child-icon{background-color:#fff;}
+
+.main-banner .child.child-red:hover .child-icon{background-color:#d6647b;}
+.main-banner .child.child-blue:hover .child-icon{background-color:#4795ce;}
+.main-banner .child.child-yellow:hover .child-icon{background-color:#d4aa3b;}
+.main-banner .child.child-orange:hover .child-icon{background-color:#d67d65;}
+.main-banner .child.child-blue2:hover .child-icon{background-color:#4e84de;}
+.main-banner .child.child-yellow2:hover .child-icon{background-color:#deab3c;}
+.main-banner .child.child-white:hover .child-icon{background-color:#f5f5f5;}
+
+.main-banner .pointer{position:absolute;bottom:28px;left:0px;transition-duration: .3s;-webkit-transition-duration: .3s;}
+
+.main-content{margin-top:-28px;margin-bottom:50px;}
+.main-content .head{position:relative;height:54px;border-bottom:1px solid #eeeeee;background:#fff;}
+.main-content .head p{color:#777777;font-size:14px;margin:auto;position:absolute;top:0px;bottom:0px;right:22px;height:24px;line-height:24px;text-align:right;}
+.main-content .content{background:#fff;display:none;}
+.main-content .content:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main-content .content .child{text-align:center;position:relative;float:left;width:25%;height:202px;box-sizing:border-box;border-bottom:1px solid #eeeeee;border-right:1px solid #eeeeee;}
+.main-content .content .child-icon{margin-top:30px;}
+.main-content .content .child-title{color:#000;font-size:14px;position:absolute;bottom:16px;left:0px;right:0px;text-align:center;}
+.main-content .content .child-bg{position: absolute;top:0px;bottom:0px;left:0px;right:0px;background:#000;opacity:0.7;}
+.main-content .content .child-hide{opacity:0;position: absolute;top:0px;bottom:0px;left:0px;right:0px;transition-duration: .5s;-webkit-transition-duration:.5s;}
+.main-content .content .child-hide .button{position:absolute;top:0px;bottom:0px;left:0px;right:0px;margin:auto;width:142px;height:48px;line-height:48px;text-align:center;font-size:18px;border-radius:2px;-webkit-border-radius:2px;}
+.main-content .content .child-hide .question{cursor:pointer;position:absolute;bottom:12px;right:12px;width:24px;}
+.main-content .content .child:hover .child-hide{opacity:1;}
+.main-content .content .child.child-gray{background:#fcfcfc;}
+.main-content .content .child:nth-child(4n+0){border-right:0;}
+

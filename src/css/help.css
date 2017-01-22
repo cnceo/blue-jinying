@@ -1,0 +1,30 @@
+.m-banner{height:184px;background-size:auto 184px;}
+.m-banner .content{bottom:52px;}
+
+.main{padding:32px 0 94px 0;}
+.main .main-title{line-height:22px;padding-bottom:9px;font-size:14px;color:#8b8c90;padding-left:20px;}
+.main .main-child{margin:6px 0;background:#fff;box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);}
+.main .main-child .child-head:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .main-child .child-head{position:relative;padding:20px 34px 20px 26px;}
+.main .main-child .child-head .child-icon{float:left;width:60px;height:60px;margin-right:28px;}
+.main .main-child .child-head .child-title{padding-top:6px;}
+.main .main-child .child-head .child-title .title{line-height:26px;color:#000000;font-size:18px;}
+.main .main-child .child-head .child-title .info{color:#808080;font-size:12px;line-height:20px;}
+.main .main-child .child-head .btn{transition-duration: .3s;-webkit-transition-duration: .3s;cursor:pointer;color:#fff;font-size:13px;background:#0090ff;top:0px;bottom:0px;right:34px;margin:auto 0;position:absolute;width:88px;height:32px;line-height:32px;text-align:center;border-radius:3px;-webkit-border-radius:3px;}
+.main .main-child .child-head .btn:hover{background:#ffb423;}
+.main .main-child .child-content{display:none;}
+.main .main-child .child-content .center{padding:26px 154px 28px 154px;border-top:1px solid #f0f0f0;}
+.main .main-child .child-content p{color:#666;font-size:14px;}
+.main .main-child .child-content img{max-width:100% !important;height:auto !important;}
+.main .main-child .child-content .btn{margin:0 auto;cursor:pointer;position:relative;width:204px;height:67px;line-height:76px;text-align:center;color:#fff;font-size:22px;}
+.main .main-child .child-content .btn .bg{transition-duration: .3s;-webkit-transition-duration:.3s;position:absolute;width:204px;height:67px;left:0px;top:0px;background:url(../images/help/btn-blue.png) no-repeat  center top;}
+.main .main-child .child-content .btn .title{position:relative;z-index:1;}
+.main .main-child .child-content .btn:hover .bg{background:url(../images/help/btn-yellow.png) no-repeat  center top;}
+
+.siftings-foot{position:relative;padding:20px 0;}
+.siftings-foot:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.siftings-foot .msg{position:absolute;top:0px;bottom:0px;left:0px;margin:auto 0;height:28px;line-height:28px;text-align:left;color:#393939;font-size:12px;}
+.siftings-foot .navs{text-align:right;height:28px;line-height:28px;padding-right:0px;}
+.siftings-foot .navs a{transition-duration: .3s;-webkit-transition-duration:.3s;color:#393939;font-size:12px;padding:0 8px;}
+.siftings-foot .navs a:hover{color:#2FB3EF;}
+.siftings-foot .navs a.on{color:#2FB3EF;}

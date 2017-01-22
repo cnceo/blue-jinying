@@ -1,0 +1,31 @@
+.main .container{padding-bottom:40px;}
+.main .siftings{background:#fff;}
+.main .siftings .child1{width:136px;}
+.main .siftings .child2{width:257px;}
+.main .siftings .child3{width:264px;}
+.main .siftings .child4{width:208px;}
+.main .siftings .child5{float:inherit !important;width:inherit;}
+
+.main .siftings .siftings-setting{padding:14px 40px;border-bottom:1px solid #e3e3e3;background:#f9f9f9;}
+.main .siftings .siftings-setting:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .siftings .siftings-setting .child{float:left;line-height:36px;padding-right:18px;}
+.main .siftings .siftings-setting .child:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .siftings .siftings-setting .child .child-title{padding:0 4px;float:left;text-align:center;color:#595959;font-size:13px;}
+.main .siftings .siftings-setting .child .child-content{background:#fff;position:relative;float:left;width:84px;height:34px;line-height:34px;border:1px solid #e8e8e8;padding:0 8px;}
+.main .siftings .siftings-setting .child .child-content .inputText{padding:0;vertical-align:middle;line-height:normal;border:0px;background:none;width:100%;color:#000;font-size:13px;}
+.main .siftings .siftings-setting .child .child-content.long{width:178px;}
+.main .siftings .siftings-setting .child .btn{transition-duration: .3s;-webkit-transition-duration:.3s;cursor:pointer;color:#fff;font-family:"Microsoft YaHei" ,Helvetica Neue,Tahoma,Arial,"微软雅黑","宋体","黑体";background:#388cff;border:0px;width:170px;line-height:49px;border-radius:3px;-webkit-border-radius:3px;width:75px;height:36px;line-height:36px;text-align:center;color:#fff;font-size:13px;}
+.main .siftings .siftings-setting .child .btn:hover{background:#1577FD;}
+
+.main .siftings .siftings-titles{border-bottom:1px solid #e3e3e3;background:#f9f9f9;}
+.main .siftings .siftings-titles:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .siftings .siftings-titles .child{ box-sizing:border-box;float:left;border-right:1px solid #e3e3e3;height:58px;line-height:58px;text-align:center;font-size:13px;color:#8a8a8a;}
+.main .siftings .siftings-titles .child.no{border-right:0px;}
+
+
+.main .siftings .siftings-content{min-height:45px;line-height:45px;text-align:center;color:#393939;font-size:12px;}
+.main .siftings .siftings-content .siftings-line{border-bottom:1px solid #ececec;}
+.main .siftings .siftings-content .siftings-line.yellow{color:#FFA800;}
+.main .siftings .siftings-content .siftings-line:after{content: "020"; display: block; height: 0; clear: both;visibility:hidden;}
+.main .siftings .siftings-content .siftings-line .child{box-sizing:border-box;float:left;}
+.main .siftings .button{width:auto;text-align:center;font-size:16px;height:37px;line-height:37px;color:#fff;border-radius:37px;-webkit-border-radius:37px;cursor:pointer;margin:40px 30px 0px 30px;}

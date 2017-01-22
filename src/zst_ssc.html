@@ -1,0 +1,1242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/zst_ssc.css" />
+</head>
+
+<body>
+<div class="loading-bg"></div>
+<div class="loading">
+    <img class="logo" src="images/logo_loading.png" />
+    <p class="title"><img src="images/loading.gif" /></p>
+</div>
+
+
+<div class="header">
+	<p class="title">彩种：<span>重庆时时彩</span><span>五星</span><span>四星</span><span>前三</span><span>中三</span><span>后三</span><span>前二</span><span>后二</span></p>
+</div>
+<div class="classify">
+	<div class="child"><span>五星走势图</span></div>
+    <div class="child"><input type="checkbox" class="inputCheck omit" /><span>遗漏</span></div>
+    <div class="child"><input type="checkbox" class="inputCheck tendency" /><span>走势</span></div>
+    <div class="child"><input type="checkbox" class="inputCheck" /><span>号温</span></div>
+    <div class="child on"><a onclick="ajax_update()">近30期</a></div>
+    <div class="child"><a  onclick="ajax_update()">近50期</a></div>
+    <div class="child"><a  onclick="ajax_update()">今日数据</a></div>
+    <div class="child"><a  onclick="ajax_update()">近2天</a></div>
+    <div class="child"><a  onclick="ajax_update()">近5天</a></div>
+    
+</div>
+<div class="main">
+	<ul class="line line-title line-gray">
+    	<li class="line-child line-child1">
+        	<p class="title">期号</p>
+        </li>
+        <li class="line-child line-child2">
+        	<p class="title">开奖号码</p>
+        </li>
+        <li class="line-child ">
+        	<p class="title">万位</p>
+            <div class="muns">
+                <span><i>0</i></span>
+                <span><i>1</i></span>
+                <span><i>2</i></span>
+                <span><i>3</i></span>
+                <span><i>4</i></span>
+                <span><i>5</i></span>
+                <span><i>6</i></span>
+                <span><i>7</i></span>
+                <span><i>8</i></span>
+                <span><i>9</i></span>
+            </div>
+        </li>
+        <li class="line-child">
+            <p class="title">千位</p>
+            <div class="muns">
+                <span><i>0</i></span>
+                <span><i>1</i></span>
+                <span><i>2</i></span>
+                <span><i>3</i></span>
+                <span><i>4</i></span>
+                <span><i>5</i></span>
+                <span><i>6</i></span>
+                <span><i>7</i></span>
+                <span><i>8</i></span>
+                <span><i>9</i></span>
+            </div>
+        </li>
+        <li class="line-child ">
+            <p class="title">百位</p>
+            <div class="muns">
+                <span><i>0</i></span>
+                <span><i>1</i></span>
+                <span><i>2</i></span>
+                <span><i>3</i></span>
+                <span><i>4</i></span>
+                <span><i>5</i></span>
+                <span><i>6</i></span>
+                <span><i>7</i></span>
+                <span><i>8</i></span>
+                <span><i>9</i></span>
+            </div>
+        </li>
+        <li class="line-child ">
+            <p class="title">十位</p>
+            <div class="muns">
+                <span><i>0</i></span>
+                <span><i>1</i></span>
+                <span><i>2</i></span>
+                <span><i>3</i></span>
+                <span><i>4</i></span>
+                <span><i>5</i></span>
+                <span><i>6</i></span>
+                <span><i>7</i></span>
+                <span><i>8</i></span>
+                <span><i>9</i></span>
+            </div>
+        </li>
+        <li class="line-child ">
+            <p class="title">个位</p>
+            <div class="muns">
+                <span><i>0</i></span>
+                <span><i>1</i></span>
+                <span><i>2</i></span>
+                <span><i>3</i></span>
+                <span><i>4</i></span>
+                <span><i>5</i></span>
+                <span><i>6</i></span>
+                <span><i>7</i></span>
+                <span><i>8</i></span>
+                <span><i>9</i></span>
+            </div>
+        </li>
+        <li class="line-child ">
+            <p class="title">号码分布</p>
+            <div class="muns">
+                <span><i>0</i></span>
+                <span><i>1</i></span>
+                <span><i>2</i></span>
+                <span><i>3</i></span>
+                <span><i>4</i></span>
+                <span><i>5</i></span>
+                <span><i>6</i></span>
+                <span><i>7</i></span>
+                <span><i>8</i></span>
+                <span><i>9</i></span>
+            </div>
+        </li>
+        
+        
+    </ul>
+
+    <div class="l-content">
+
+    <ul class="line line-canvas">
+    	<li class="line-child line-child1">
+        	<p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+        	<p class="title">1,4,7,3,7		</p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+        	<div class="muns">
+            	<span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+    
+
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="yellow on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span class="yellow on"><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+
+
+    <ul class="line line-canvas">
+        <li class="line-child line-child1">
+            <p class="title">20160404-014</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title">1,4,7,3,7      </p>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#ffba00">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span class="yellow on"><i>10</i></span>
+                <span><i>10</i></span>
+                <canvas width="270" height="44">
+
+            </div>
+        </li>
+        <li class="line-child line-child-canvas" data-line-color="#2cba0b">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span class="green on"><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span class="green on"><i>10</i></span>
+                <span><i>10</i></span>
+
+            </div>
+        </li>
+        
+        
+    </ul>
+
+    
+    <ul class="line line-gray">
+        <li class="line-child line-child1">
+            <p class="title">出现总次数</p>
+        </li>
+        <li class="line-child line-child2">
+            <p class="title"></p>
+        </li>
+        <li class="line-child">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+            </div>
+        </li>
+        <li class="line-child">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+            </div>
+        </li>
+        <li class="line-child">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+            </div>
+        </li>
+        <li class="line-child">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+            </div>
+        </li>
+        <li class="line-child">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+            </div>
+        </li>
+        <li class="line-child">
+            <div class="muns">
+                <span><i>22</i> </span>
+                <span><i>7</i></span>
+                <span><i>4</i></span>
+                <span><i>6</i></span>
+                <span><i>4</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+                <span><i>10</i></span>
+            </div>
+        </li>
+
+    </ul>
+    
+    
+    <ul class="line line-gray">
+    	<li class="line-child line-child1">
+        	<p class="title">期号</p>
+        </li>
+        <li class="line-child line-child2">
+        	<p class="title">开奖号码</p>
+        </li>
+        <li class="line-child">
+        	<p class="title">万位</p>
+        </li>
+        <li class="line-child">
+            <p class="title">千位</p>
+        </li>
+        <li class="line-child">
+            <p class="title">百位</p>
+        </li>
+        <li class="line-child">
+            <p class="title">十位</p>
+        </li>
+        <li class="line-child">
+            <p class="title">个位</p>
+        </li>
+        <li class="line-child">
+            <p class="title">号码分布</p>
+        </li>
+
+    </ul>
+</div>
+</div>
+
+<a href="#"><div class="btn">返回时时彩</div></a>
+
+
+<script src="assets/jquery/jquery.js"></script>
+<script src="js/zst_ssc.js"></script>
+</body>
+</html>

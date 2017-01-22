@@ -1,0 +1,62 @@
+.m-banner{height:236px;background-size:auto 236px;}
+.m-banner .content{bottom:80px;}
+
+.main{margin:-24px 0 66px 0;}
+.main .main-child{position:relative;margin-bottom:15px;background:#fff;}
+.main .main-child .main-child-center{padding:22px 20px;}
+.main .main-child .child-img{position:relative;height:255px;overflow:hidden;}
+.main .main-child .child-img .bg{position:absolute;top:0px;left:0px;width:100%;height:100%;background:no-repeat center center;background-size:cover;}
+.main .main-child .child-img .content{position:relative;z-index:1;padding-top:96px;}
+.main .main-child .child-img .content .status{opacity:0;font-size:18px;margin:0 auto;width:180px;height:58px;line-height:58px;text-align:center;color:#fff;border-radius:3px;-webkit-border-radius:3px;
+-webkit-animation-duration: .4s;animation-duration: .4s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
+.main .main-child .child-img .content .status.red{background:#ff4c4c;}
+.main .main-child .child-img .content .status.blue{background:#00b4ff;}
+.main .main-child .child-img .content .status.gray{background:#1b1b1b;}
+.main .main-child .child-img .content .time{opacity:0;text-align:center;color:#fff;font-size:13px;padding-top:12px;
+-webkit-animation-duration: .4s;animation-duration: .4s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
+.main .main-child .child-title{position:relative;margin-top:17px;}
+.main .main-child .child-title .title{line-height:28px;color:#1F2127;font-size:20px;}
+.main .main-child .child-title .showtime{line-height:16px;color:#ccc;font-size:12px;}
+.main .main-child .child-title .btn{transition-duration: .3s;-webkit-transition-duration:.3s;background:#e8eaf0;cursor:pointer;position:absolute;top:4px;right:0px;width:36px;height:36px;line-height:36px;text-align:center;border-radius:36px;-webkit-border-radius:36px;}
+.main .main-child .child-title .btn img{ vertical-align:middle;transition-duration: .3s;-webkit-transition-duration:.3s;}
+.main .main-child .child-title .btn:hover{background:#ff4c4c;}
+.main .main-child .child-title .btn:hover img{ transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+.main .main-child .child-title .btn.on{background:#ff4c4c;}
+.main .main-child .child-title .btn.on img{ transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+.main .main-child .child-content{border-top:1px solid #e8eaf0;display:none;}
+.main .main-child .child-content .center{padding:26px 26px 30px 26px;}
+.main .main-child .child-content .flags{padding:0px 60px 30px 60px;text-align:center;}
+.main .main-child .child-content .flags .flag{margin:0 14px;display:inline-block;*display:inline;*zoom:1;width:188px;height:255px;background:url(../images/activity/falg.png) no-repeat center top; vertical-align:top;}
+.main .main-child .child-content .flags .flag .flag-head{padding:8px 0 4px 0;line-height:22px;text-align:center;font-size:14px;color:#fff;}
+.main .main-child .child-content .flags .flag .flag-content{padding-top:38px;line-height:18px;text-align:center;font-size:14px;color:#fff;}
+.main .main-child .child-content .flags .flag .flag-content span{color:#FFAB19;}
+.main .main-child .child-content .flags .flag .flag-content .btn{cursor:pointer;margin:32px auto 0 auto;position:relative;width:106px;height:32px;line-height:32px;text-align:center;font-size:16px;color:#fff;}
+.main .main-child .child-content .flags .flag .flag-content .btn .bg{position:absolute;top:0px;left:0px;right:0px;width:106px;height:32px;background:url(../images/activity/btn.png) no-repeat center top;transition-duration: .3s;-webkit-transition-duration:.3s;}
+.main .main-child .child-content .flags .flag .flag-content .btn .title{position:relative;z-index:1;}
+.main .main-child .child-content .flags .flag .flag-content .btn.no{cursor:default;}
+.main .main-child .child-content .flags .flag .flag-content .btn.no .bg{background:url(../images/activity/btn2.png) no-repeat center top;}
+.main .main-child .child-content .flags .flag .flag-content .btn.no:hover .bg{background:url(../images/activity/btn2.png) no-repeat center top;}
+.main .main-child .child-content .flags .flag .flag-content .btn:hover .bg{background:url(../images/activity/btn3.png) no-repeat center top;}
+.main .main-child .child-content .flags .flag .flag-content .msg{font-size:13px;color:#000;}
+.main .main-child .child-content .flags .flag .flag-content .msg p img{max-width:100% !important;height:auto !important;}
+.main .main-child:hover .child-img .content .status{opacity:1;-webkit-animation-name: zoomIn;animation-name: zoomIn;}
+.main .main-child:hover .child-img .content .time{ opacity:1;-webkit-animation-name: zoomIn;animation-name: zoomIn;animation-delay:.2s;-webkit-animation-delay:.2s;}
+
+
+@keyframes  main-child{
+0%{ transform:scale(0); opacity:0;}
+100%{transform:scale(1); opacity:1;}
+}
+@-webkit-keyframes main-child{
+0%{ -webkit-transform:scale(0); opacity:0;}
+100%{-webkit-transform:scale(1); opacity:1;}
+}
+
+@-webkit-keyframes zoomIn {
+  from {opacity: 0;-webkit-transform: scale3d(.3, .3, .3);transform: scale3d(.3, .3, .3);}
+  50% {opacity: 1;}
+}
+@keyframes zoomIn {
+  from {opacity: 0;-webkit-transform: scale3d(.3, .3, .3);transform: scale3d(.3, .3, .3);}
+  50% {opacity: 1;}
+}

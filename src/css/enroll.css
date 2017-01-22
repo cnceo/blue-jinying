@@ -1,0 +1,52 @@
+html{height:100%;}
+body{min-height:100%;background:url(../images/login/bg3.jpg) repeat-x center center;background-size:auto 100%;}
+.main-copyright{margin-top:60px;position:relative;z-index:1;line-height:20px;font-size:12px;color:#fff;text-align:center;}
+.main-copyright a{color:#fff;}
+.main{position:relative;z-index:1;width:364px;margin:0 auto;height:100%;padding-top:8%;}
+.main .enroll{overflow:hidden;position:relative;z-index:1;background:#fff;padding:42px 0 50px 0;border-radius:3px;-webkit-border-radius:3px;box-shadow:0 5px 11px rgba(0,0,0,0.16);-webkit-box-shadow:0 5px 11px rgba(0,0,0,0.16);}
+.main .enroll .logo{text-align:center;}
+.main .enroll .logo img{max-width:80%;max-height:80px;}
+.main .enroll .logo_title{padding:12px 0 36px 0;text-align:center;}
+.main .enroll .line{margin:4px auto;width:300px;position:relative;height:56px;line-height:56px;background:#f4f4f4;border-radius:56px;-webkit-border-radius:56px;}
+.main .enroll .line img{position:absolute;top:0px;bottom:0px;left:10px;margin:auto 0;
+*top:12px;}
+.main .enroll .line .code{left:inherit;right:20px;
+*left:200px;*top:16px;}
+.main .enroll .line .inputText{font-size:17px;color:#9b9dad;position:absolute;left:64px;top:0px;bottom:0px;margin:auto 0;height:48px;line-height:1;background:none;border:0px;}
+.main .enroll .line .inputText::-webkit-input-placeholde{font-size:17px;font-family:Arial, Helvetica, sans-serif;color:#9b9dad;}
+.main .enroll .button{cursor:pointer;position:relative;margin:0 auto;margin-top:34px;width:307px;height:56px;line-height:56px;text-align:center;font-size:20px;color:#fff;}
+
+.main .enroll .btn:hover .bg{background:url(../images/login/btn2.png);}
+.main .enroll .t1{line-height:26px;text-align:center;color:#676767;font-size:15px;margin-top:50px;}
+.main .enroll .t1 a{color:#0099ff;}
+.main .enroll .msg{font-size:14px;color:#666;text-align: center;}
+.main .enroll .msg.red{color:red;}
+
+.main .enroll .logo{animation:logo .6s ease-in-out .8s both;-webkit-animation:logo .6s ease-in-out .8s both;}
+.main .enroll .enroll-container{animation:bottom 1s ease-in-out 0s both;-webkit-animation:bottom 1s ease-in-out 0s both;}
+@keyframes logo{
+0%{ transform:scale(0); opacity:0;}
+90%{ transform:scale(1.1); }
+100%{transform:scale(1);opacity:1;}
+}
+@-webkit-keyframes logo{
+0%{ -webkit-transform:scale(0); opacity:0;}
+90%{ -webkit-transform:scale(1.1); }
+100%{-webkit-transform:scale(1);opacity:1;}
+}
+@keyframes top{
+0%{ transform:translateY(-100%);}
+100%{transform:translateY(0px);}
+}
+@-webkit-keyframes top{
+0%{ -webkit-transform:translateY(-100%);}
+100%{-webkit-transform:translateY(0px);}
+}
+@keyframes bottom{
+0%{ transform:translateY(100%);}
+100%{transform:translateY(0px);}
+}
+@-webkit-keyframes bottom{
+0%{ -webkit-transform:translateY(100%);}
+100%{-webkit-transform:translateY(0px);}
+}

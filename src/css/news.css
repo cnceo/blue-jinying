@@ -1,0 +1,19 @@
+.m-banner{height:346px;background-size:auto 346px;}
+.m-banner .content{bottom:80px;}
+
+.main{margin:66px 0;}
+.main .container{background:#fff;padding:20px 42px; box-sizing: border-box;    min-height: 660px;}
+.main .ntitle{line-height:42px;font-size:20px;color:#000;border-bottom: 1px solid #ccc;}
+.main .more{top: 24px;color:#6f6f6f;position:absolute;right:22px;height:20px;line-height:20px;text-align: right;font-size:12px;}
+.main ul{padding:10px 0;border-bottom: 1px solid #ccc;}
+.main li{position:relative;height:24px;line-height:24px;padding:7px 0;}
+.main li .title{transition-duration: .3s;-webkit-transition-duration:.3s;margin-right:100px;font-size:16px;color:#353557;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.main li .time{position:absolute;top:0px;bottom:0px;margin:auto 0;right:22px;text-align:right;height:24px;line-height:24px;color:#5d5d7f;font-size:14px;}
+.main li:hover .title{color:#0090ff;}
+
+.main .siftings-foot{position: relative;margin-top:12px;}
+.main .siftings-foot .msg{position:absolute;top:0px;bottom:0px;left:0px;margin:auto 0;height:28px;line-height:28px;text-align:left;color:#393939;font-size:12px;}
+.main .siftings-foot .navs{text-align:right;height:28px;line-height:28px;padding-right:22px;}
+.main .siftings-foot .navs a{transition-duration: .3s;-webkit-transition-duration:.3s;color:#393939;font-size:12px;padding:0 8px;}
+.main .siftings-foot .navs a:hover{color:#2FB3EF;}
+.main .siftings-foot .navs a.on{color:#2FB3EF;}
