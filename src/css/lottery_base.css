@@ -77,7 +77,13 @@
 .m-banner .b-child2 .btns .btn.s5{background-image:url(../images/lottery/s5.png);}
 .m-banner .b-child2 .btns .btn.s6{background-image:url(../images/lottery/s6.png);}
 .m-banner .b-child2 .btns2 .btn{margin:0 2px;color:#fff;font-size:14px;width:73px;height:27px;background:#fff;color:#6C5547;font-size:12px;cursor:pointer;border:0px;border-radius:3px;-webkit-border-radius:3px;}
-
+.m-banner .b-child2 .btns.btns3{line-height:52px;}
+.m-banner .b-child2 .btns.btns3 .btn{vertical-align: middle;width:36px;height:36px;line-height:36px;text-align:center;background-image:url(../images/lottery/liuhecai/bg-yellow.png);font-size:16px;color:#fff;font-weight:bold;}
+.m-banner .b-child2 .btns.btns3 .btn.btn-add{background-image:url(../images/lottery/liuhecai/add.png);width:12px;background-position:center center;}
+.m-banner .b-child2 .btns.btns3 .btn.btn-red{background-image:url(../images/lottery/liuhecai/bg-red.png);}
+.m-banner .b-child2 .btns.btns3 .btn.btn-green{background-image:url(../images/lottery/liuhecai/bg-green.png);}
+.m-banner .b-child2 .btns.btns3 .btn.btn-blue{background-image:url(../images/lottery/liuhecai/bg-blue.png);}
+.m-banner .b-child2 .btns.btns3 .btn.btn-yellow{background-image:url(../images/lottery/liuhecai/bg-yellow.png);}
 .m-banner .b-child2 .btns .btn.btnPk10{font-weight:normal;font-size:16px;width:25px;height:51px;line-height:51px;background-image:url(../images/lottery/m-bg3.png);}
 
 

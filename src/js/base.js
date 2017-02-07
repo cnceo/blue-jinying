@@ -102,10 +102,10 @@ $(function(){
 	$(".fixed .child .msg1").css("width",fixedwidth+"px");
 
 	//判读底部导航是否有空缺
-	$(window).scroll(footerBool);
-	$(window).resize(footerBool);
+	// $(window).scroll(footerBool);
+	// $(window).resize(footerBool);
 	//window.onresize = footerBool;
-	footerBool();
+	//footerBool();
 
 });
 
